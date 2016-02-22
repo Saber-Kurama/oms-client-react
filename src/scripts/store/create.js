@@ -3,17 +3,17 @@
  */
 import { createStore } from 'redux';
 import { syncHistory } from 'redux-simple-router';
-
+// 中间件
 import { setup } from './middleware';
 import enhance from './enhance';
-import reducers from 'modules';
+// import reducers from 'modules';
 
 // 根据 history（hash 浏览器 等不同类型 ） 和 初始值来创建 store
 export default function(history, initialState = {}) {
   // 创建一个中间件
   const routerMiddleware = syncHistory(history);
   const middleware = setup(routerMiddleware);
-
+  //
   const creator = enhance(middleware);
   const create = creator(createStore);
   const store = create(reducers, initialState);

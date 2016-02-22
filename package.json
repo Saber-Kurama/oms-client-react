@@ -29,8 +29,10 @@
     "react-css-modules": "3.7.4",
     "react-dom": "0.14.7",
     "react-router": "2.0.0",
+    "react-tap-event-plugin": "^0.2.2",
     "redux": "3.3.1",
     "redux-simple-router": "2.0.4",
+    "redux-router": "^1.0.0-beta7",
     "redux-thunk": "1.0.3"
   },
   "devDependencies": {
@@ -85,6 +87,7 @@
     "gulp-real-favicon": "0.2.1",
     "gulp-size": "2.0.0",
     "gulp-util": "3.0.7",
+    "html-webpack-plugin": "^1.6.2",
     "imports-loader": "0.6.5",
     "isparta": "4.0.0",
     "isparta-loader": "2.0.0",

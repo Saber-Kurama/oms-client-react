@@ -8,6 +8,7 @@ import plugins from './plugins/client';
 
 export default merge(common, {
   target: 'web',
+  // 实体类
   entry: ['./client'],
   output: {
     path: config.paths.public,

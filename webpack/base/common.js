@@ -14,9 +14,11 @@ const noParse = [
 ];
 
 export default {
+  // 名字
   name: config.name,
+  // 当前路径
   context: config.paths.scripts,
-
+ // 转换
   resolve: {
     root: config.paths.root,
     alias: config.aliases,
