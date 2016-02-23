@@ -3,11 +3,24 @@ require('babel-register');
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
+const MemoryFileSystem = require("memory-fs");
 const config = require('../webpack/development/client');
-console.log(config);
 const app = express();
 const compiler = webpack(config);
+const router = express.Router();
+const fs = new MemoryFileSystem();
+console.log(config.output);
+app.use(router.get('*',function(req, res, next){
+  // console.log(req);
 
+  if(req.url.indexOf('/about') >= 0){
+    console.log(req.url);
+    req.url = '/';
+  }
+
+
+ next();
+}))
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: false,
   publicPath: config.output.publicPath,
@@ -18,6 +31,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 // app.use('api', require('../src/mock'));
+
 
 app.listen(3000, 'localhost', (err) => {
   if (err) {
