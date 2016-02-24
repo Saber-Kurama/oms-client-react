@@ -7,7 +7,7 @@ import aliases from './aliases';
 // import dependencies from './dependencies';
 // import globals from './globals';
 // import browsersync from './browsersync';
-// import postcss from './postcss';
+import postcss from './postcss';
 import env from './env';
 //
 import parseArgs from './utils/parseArgs';
@@ -28,7 +28,7 @@ export default {
   // dependencies,
   // globals: globals(environments, environmentName, argv),
   //
-  // postcss,
+  postcss,
   // browsersync: browsersync(argv),
   //
   env: environments,

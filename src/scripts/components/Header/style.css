@@ -1,0 +1,9 @@
+:root{
+  --mainColor: red;
+}
+.header{
+  color: var(--mainColor);
+}
+.title{
+  color: #ccc;
+}

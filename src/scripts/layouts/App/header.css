@@ -1,0 +1,13 @@
+
+/*.header{
+  composes: header from './../../components/Header/style.css';
+}*/
+/*.title{
+  composes: title from './../../components/Header/style.css';
+}*/
+.header{
+  color: green;
+}
+.title{
+  color: #4c4;
+}

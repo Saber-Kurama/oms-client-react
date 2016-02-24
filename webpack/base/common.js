@@ -3,7 +3,7 @@ import { render as prettyjson } from 'prettyjson';
 
 import config from '../../config';
 // import toolbox from './toolbox';
-// import postcss from './postcss';
+import postcss from './postcss';
 // import eslint from './eslint';
 
 // debug('app:webpack:dependencies')(prettyjson(config.dependencies));
@@ -29,6 +29,7 @@ export default {
       '.js',
       '.css',
       '.scss',
+      '.less',
       '.svg',
       '.json'
     ],
@@ -46,7 +47,7 @@ export default {
   module: { noParse },
 
   // toolbox,
-  // postcss,
+  postcss,
   // eslint,
 
   profile: config.argv.profile

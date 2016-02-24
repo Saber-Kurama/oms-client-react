@@ -32,7 +32,7 @@ const query = {
   image: { url: { prefix: 'images/', name, limit } }
 };
 /*
- *  主要是静态资源的 加载器（css的呢？是postcss？？？）
+ *  主要是静态资源的 加载器
  */
 export default [
   { test: /\.json(\?.+)?$/, loader: 'json' },
@@ -41,5 +41,5 @@ export default [
   { test: /\.woff2(\?.+)?$/, query: { mimetype: 'application/font-woff2', ...query.font.url }, ...loader.font.url },
   { test: /\.ttf(\?.+)?$/, query: { mimetype: 'application/octet-stream', ...query.font.url }, ...loader.font.url },
   { test: /\.eot(\?.+)?$/, query: query.font, ...loader.font.file },
-  { test: /\.svg(\?.+)?$/, include: [paths.modules, paths.scripts], loader: 'svg-inline' }
+  { test: /\.svg(\?.+)?$/, include: [paths.modules, paths.scripts], loader: 'url-loader' }
 ]
