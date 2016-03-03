@@ -1,9 +1,27 @@
 :root{
-  --mainColor: red;
+  --mainColor: #fff;
+  --height: 50px;
+  --bgcolor: #00bcd4;
 }
 .header{
   color: var(--mainColor);
+  height: var(--height);
+  background: var(--bgcolor);
+}
+.logo{
+  line-height: var(--height);
+  padding: 10px;
+  color: var(--mainColor);
+}
+.toolbar{
+  float: right;
+  list-style: none;
+  line-height: var(--height);
+  > li{
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
 .title{
-  color: #ccc;
+  color: #fff;
 }

@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sweeto</title>
 </head>
+<style>
+  #content {
+    width: 100%;
+    height: 100%;
+  }
+</style>
 <body>
   <div id="content">
     <h1>If you can see this, something went wrong ...</h1>

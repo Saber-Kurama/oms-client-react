@@ -28,6 +28,55 @@ export default class Home extends React.Component {
         只是一个首页
         gotoAbout
         <Link to="/about">点此退出</Link>
+        <img  src='images/logo.png'></img>
+          只是一个首页
+          gotoAbout
+          <Link to="/about">点此退出</Link>
+          <img  src='images/logo.png'></img>
+            只是一个首页
+            gotoAbout
+            <Link to="/about">点此退出</Link>
+            <img  src='images/logo.png'></img>
+              只是一个首页
+              gotoAbout
+              <Link to="/about">点此退出</Link>
+              <img  src='images/logo.png'></img>
+                只是一个首页
+                gotoAbout
+                <Link to="/about">点此退出</Link>
+                <img  src='images/logo.png'></img>
+                  只是一个首页
+                  gotoAbout
+                  <Link to="/about">点此退出</Link>
+                  <img  src='images/logo.png'></img>
+                    只是一个首页
+                    gotoAbout
+                    <Link to="/about">点此退出</Link>
+                    <img  src='images/logo.png'></img>
+                      只是一个首页
+                      gotoAbout
+                      <Link to="/about">点此退出</Link>
+                      <img  src='images/logo.png'></img>
+                        只是一个首页
+                        gotoAbout
+                        <Link to="/about">点此退出</Link>
+                        <img  src='images/logo.png'></img>
+                          只是一个首页
+                          gotoAbout
+                          <Link to="/about">点此退出</Link>
+                          <img  src='images/logo.png'></img>
+                            只是一个首页
+                            gotoAbout
+                            <Link to="/about">点此退出</Link>
+                            <img  src='images/logo.png'></img>
+                              只是一个首页
+                              gotoAbout
+                              <Link to="/about">点此退出</Link>
+                              <img  src='images/logo.png'></img>
+                                只是一个首页
+                                gotoAbout
+                                <Link to="/about">点此退出</Link>
+                                <img  src='images/logo.png'></img>
       </div>
     )
   }

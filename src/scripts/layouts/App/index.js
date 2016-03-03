@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import css from 'react-css-modules';
-import { Header } from 'components/Header';
+import Header from 'components/Header';
+import Menu from 'components/Menu';
 import styles from './style.css';
 import headerStyle from './header.css';
 // const { func, string, object } = PropTypes;
@@ -17,13 +18,13 @@ export class App extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div >
-    <Header styles={styles} />
-        <div styleName='name'>
-asdasdasd
-          <section >
+      <div styleName='app'>
+        <Header className={styles['app-header']} />
+        <div styleName='app-aside'><Menu /></div>
+        <div styleName='app-content'>
+
             {children}
-          </section>
+          
         </div>
 
       </div>

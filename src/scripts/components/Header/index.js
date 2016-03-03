@@ -6,14 +6,16 @@ import css from 'react-css-modules';
 
 console.log(styles);
 @css(styles)
-export class Header extends Component {
+export default class Header extends Component {
   render() {
     return (
-      <header  styleName='header'>
-           asdasdasdasasfdaxczcjzx
-           <div styleName='title'>
-           这是一个标题
-           </div>
+      <header  styleName='header' className = {this.props.className}>
+        <a styleName='logo'>这是一个logo</a>
+        <ul styleName='toolbar'>
+          <li>菜单一</li>
+          <li>菜单二</li>
+        </ul>
+
       </header>
     );
   }
