@@ -4,7 +4,7 @@ import { render as prettyjson } from 'prettyjson';
 import config from '../../config';
 // import toolbox from './toolbox';
 import postcss from './postcss';
-// import eslint from './eslint';
+import eslint from './eslint';
 
 // debug('app:webpack:dependencies')(prettyjson(config.dependencies));
 // debug('app:webpack:aliases')(prettyjson(config.aliases));
@@ -48,7 +48,7 @@ export default {
 
   // toolbox,
   postcss,
-  // eslint,
+  eslint,
 
   profile: config.argv.profile
 }

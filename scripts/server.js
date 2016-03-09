@@ -9,7 +9,6 @@ const app = express();
 const compiler = webpack(config);
 const router = express.Router();
 const fs = new MemoryFileSystem();
-console.log(config.module.loaders);
 app.use(express.static(path.join(__dirname ,'../dist/public')));
 app.use(router.get('*',function(req, res, next){
   // console.log(req);

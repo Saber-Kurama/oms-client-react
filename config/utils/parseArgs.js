@@ -7,6 +7,7 @@
    // these switches are always treated as booleans
    boolean: [
      'test',
+     'lint',
      'development',
      'staging',
      'production',
@@ -17,4 +18,3 @@
      'watch'
    ]
  });
- 

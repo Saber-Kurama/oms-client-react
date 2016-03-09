@@ -17,14 +17,15 @@ export class App extends Component {
 
   render() {
     const { children } = this.props;
+    // styles={headerStyle}
     return (
       <div styleName='app'>
-        <Header className={styles['app-header']} />
+        <Header className={styles['app-header']}  />
         <div styleName='app-aside'><Menu /></div>
         <div styleName='app-content'>
 
             {children}
-          
+
         </div>
 
       </div>

@@ -6,8 +6,15 @@
   composes: title from './../../components/Header/style.css';
 }*/
 .header{
-  color: green;
+  composes: header from './../../components/Header/style.css';
+  background-color: green;
 }
-.title{
+/*.title{
   color: #4c4;
+}*/
+.logo{
+  composes: logo from './../../components/Header/style.css';
+}
+.toolbar{
+  composes: toolbar from './../../components/Header/style.css';
 }
