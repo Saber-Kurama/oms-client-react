@@ -124,6 +124,7 @@
     "mocha": "2.4.5",
     "mocha-better-spec-reporter": "3.0.1",
     "mocha-lcov-reporter": "1.0.0",
+    "mockjs": "1.0.1-beta2",
     "next-update": "1.2.1",
     "node-sass": "v3.4.2",
     "phantomjs-polyfill": "0.0.1",

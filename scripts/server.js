@@ -9,18 +9,42 @@ const app = express();
 const compiler = webpack(config);
 const router = express.Router();
 const fs = new MemoryFileSystem();
+const routes = require('./routes/index');
 app.use(express.static(path.join(__dirname ,'../dist/public')));
+console.log('????////');
+console.log(routes);
+app.use('/api', routes);
 app.use(router.get('*',function(req, res, next){
-  // console.log(req);
 
-  if(req.url.indexOf('/about') >= 0){
-    console.log(req.url);
+  //console.log(req);
+
+
+  if(/\.js$/.test(req.url) || /\.css$/.test(req.url) ||
+    /\.(jpe?g|png|gif)(\?.+)?$/i.test(req.url) ||
+    /\.woff(\?.+)?$/.test(req.url) ||
+    /\.woff2(\?.+)?$/.test(req.url) ||
+    /\.ttf(\?.+)?$/.test(req.url) ||
+    /\.eot(\?.+)?$/.test(req.url) ||
+    /\.svg(\?.+)?$/.test(req.url) ||
+    /\.json(\?.+)?$/.test(req.url) ||
+    req.url === '/__webpack_hmr' ||
+    req.url === '/'
+  ){
+    //console.log(req.url);
+
+  }else {
+    console.log('--------------' + req.url)
     req.url = '/';
   }
+
+  // if(req.url.indexOf('/about') >= 0){
+  //   req.url = '/';
+  // }
 
 
  next();
 }))
+
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: false,
   publicPath: config.output.publicPath,

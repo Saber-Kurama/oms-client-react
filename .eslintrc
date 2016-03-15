@@ -7,6 +7,8 @@
     "node": true
   },
   "rules": {
+    "no-param-reassign": [2, {"props": false}],
+    comma-dangle: [2, "never"],
     "valid-jsdoc": 2,
     "react/jsx-uses-react": 1,
     "react/jsx-no-undef": 2,
