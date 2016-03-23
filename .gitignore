@@ -6,3 +6,4 @@ npm-debug*
 .env
 .DS_Store
 .publish
+.idea

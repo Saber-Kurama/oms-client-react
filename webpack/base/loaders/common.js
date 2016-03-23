@@ -21,7 +21,7 @@ const loader = {
       ]
     }
   },
-  image: { url: { loader: 'url' } }
+  image: { url: { loader: 'url', include: [paths.assets.images] } }
 };
 
 const query = {

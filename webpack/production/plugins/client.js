@@ -27,16 +27,16 @@ export default [
   ...common,
   new webpack.optimize.AggressiveMergingPlugin(),
   new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
-  // new webpack.optimize.UglifyJsPlugin({
-  //   sourceMap: process.env.SOURCE_MAP || sourceMap,
-  //   minimize: true,
-  //   compress: {
-  //     screw_ie8: true,
-  //     warnings: false,
-  //     unsafe: true,
-  //     drop_console: true
-  //   }
-  // }),
+  new webpack.optimize.UglifyJsPlugin({
+    sourceMap: process.env.SOURCE_MAP || sourceMap,
+    minimize: true,
+    compress: {
+      screw_ie8: true,
+      warnings: false,
+      unsafe: true,
+      drop_console: true
+    }
+  }),
   // new CompressionPlugin({
   //   asset: '{file}.gz',
   //   algorithm: 'gzip',

@@ -19,6 +19,7 @@ export default [
     ],
     loaders: [
       'style',
+      //`css?sourceMap&${cssOptions.css}`,
       `css?${cssOptions.css}`,
       'postcss'
     ]

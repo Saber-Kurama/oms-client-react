@@ -10,6 +10,7 @@
 }
 .wrapper{
   height: 40px;
+  background: url('/images/logo.png');
   background-color: #f6f8f8;
 }
 .bar{

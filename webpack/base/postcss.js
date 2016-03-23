@@ -23,7 +23,7 @@ export default (bundler) => [
   require('precss'),
   require('postcss-cssnext')(cssnext),
   // require('lost'),
-  require('postcss-assets')(assets),
+  //require('postcss-assets')(assets),
   // require('postcss-font-magician')(fontMagician),
   require('postcss-size'),
   require('postcss-focus'),

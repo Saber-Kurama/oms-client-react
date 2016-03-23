@@ -11,5 +11,5 @@ export default [
   filename : 'index.html',
   inject: 'body'
   }),
-  new ExtractTextPlugin(addHash('[name].css', 'contentHash')),
+  new ExtractTextPlugin(addHash('css/[name].css', 'contentHash')),
 ]

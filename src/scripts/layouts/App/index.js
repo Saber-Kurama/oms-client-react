@@ -20,7 +20,7 @@ export class App extends Component {
     // styles={headerStyle}
     return (
       <div styleName='app'>
-        <Header className={styles['app-header']}  />
+        <Header   />
         <div styleName='app-aside'><Menu /></div>
         <div styleName='app-content'>
 

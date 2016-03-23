@@ -7,6 +7,7 @@
   color: var(--mainColor);
   height: var(--height);
   background: var(--bgcolor);
+  font-family: 'sanber sdads';
 }
 .logo{
   line-height: var(--height);
@@ -25,3 +26,4 @@
 .title{
   color: #fff;
 }
+

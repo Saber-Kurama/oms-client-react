@@ -13,6 +13,7 @@ import createStore from '../store/create';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 // 引入 antd的less样式
 import 'antd/style/index.less';
+import '../../styles/code.css';
 // import './index.less';
 injectTapEventPlugin();
 const initialState = {};
