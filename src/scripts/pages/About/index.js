@@ -71,22 +71,22 @@ const data = [{
 
 @css(styles)
 export default class Home extends React.Component {
-  constructor () {
-    super()
+  constructor() {
+    super();
   }
 
-  componentWillMount () {
+  componentWillMount() {
   }
 
-  render () {
+  render() {
     return (
-      <div styleName='contain'>
-        <div styleName='wrapper'>这是一个面包屑</div>
-        <section styleName='content'>
-          <div styleName='bar'>
+      <div styleName="contain">
+        <div styleName="wrapper">这是一个面包屑</div>
+        <section styleName="content">
+          <div styleName="bar">
             <Button type="primary">新增用户</Button>
           </div>
-          <div styleName='bar'>
+          <div styleName="bar">
             <Form horizontal styleName="advanced-search-form">
   <Row>
     <Col span="8">
@@ -166,6 +166,6 @@ export default class Home extends React.Component {
         </section>
 
       </div>
-    )
+    );
   }
 }

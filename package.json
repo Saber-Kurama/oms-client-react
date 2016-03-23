@@ -215,6 +215,7 @@
     "lint": "gulp lint",
     "lint:css": "stylelint src/**/*.css",
     "lint:js": "gulp lint:js",
+    "lint:js:fix" "gulp lint:js:fix",
     "lint:js:test": "gulp lint:js --test",
     "security:check": "gulp security:check",
     "start": "gulp --watch",

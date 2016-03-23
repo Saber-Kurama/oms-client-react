@@ -14,11 +14,11 @@ export default class LeftMenu extends Component {
     super(props);
     this.state = {
       current: '1'
-    }
+    };
   }
-  handleClick(e){
+  handleClick(e) {
     console.log('click ', e);
-   this.setState({
+    this.setState({
      current: e.key
    });
   }

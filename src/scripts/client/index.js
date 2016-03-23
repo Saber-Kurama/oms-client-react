@@ -18,7 +18,7 @@ import '../../styles/code.css';
 injectTapEventPlugin();
 const initialState = {};
 const store = createStore(browserHistory, initialState);
-const history = useRouterHistory(createHistory)({ basename: '' })
+const history = useRouterHistory(createHistory)({ basename: '' });
 // if (__DEVTOOLS__) {
 //   const { DebugPanel, DevTools, LogMonitor } = require('redux-devtools/lib/react');
 //   render(

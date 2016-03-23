@@ -9,7 +9,7 @@ import enhance from './enhance';
 import reducers from 'modules';
 
 // 根据 history（hash 浏览器 等不同类型 ） 和 初始值来创建 store
-export default function(history, initialState = {}) {
+export default function (history, initialState = {}) {
   // 创建一个中间件
   const routerMiddleware1 = routerMiddleware(history);
   const middleware = setup(routerMiddleware1);
