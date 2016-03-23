@@ -1,0 +1,5 @@
+{
+  "verbose": false,
+  "ignore": ["dist", "coverage", "test", "src","webpack","bin","gulpfile.js",
+    ".publish","karma","webpack"]
+}

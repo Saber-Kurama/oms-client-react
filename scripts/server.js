@@ -11,8 +11,6 @@ const router = express.Router();
 const fs = new MemoryFileSystem();
 const routes = require('./routes/index');
 app.use(express.static(path.join(__dirname ,'../dist/public')));
-console.log('????////');
-console.log(routes);
 app.use('/api', routes);
 app.use(router.get('*',function(req, res, next){
 
@@ -63,5 +61,4 @@ app.listen(3000, 'localhost', (err) => {
     return;
   }
 
-  console.log('Listening at http://localhost:3000');
 });
