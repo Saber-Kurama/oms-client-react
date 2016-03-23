@@ -15,8 +15,6 @@ export default merge(common, {
 
     filename: addHash('[name].js', 'chunkhash'),
     chunkFilename: addHash('chunk.[name].js', 'chunkhash'),
-    //publicPath: 'http://0.0.0.0:3000/',
-
     library: 'ClientApp',
     libraryTarget: 'var'
   },

@@ -219,6 +219,7 @@
     "security:check": "gulp security:check",
     "start": "gulp --watch",
     "dev": "nodemon scripts/server.js",
+    "dev:lint": "nodemon scripts/server.js --lint",
     "test": "karma start -- --test",
     "test:mocha": "mocha ./test/app/modules/**/*.test.js",
     "test:mocha:watch": "npm run test:mocha -- --watch",

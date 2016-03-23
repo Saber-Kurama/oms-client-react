@@ -5,7 +5,7 @@ const eslint = {
   include: [paths.scripts],
   loader: 'eslint'
 };
-console.log('argv ===========' + argv.lint)
+
 export default argv.lint ?
   [eslint] :
   [];

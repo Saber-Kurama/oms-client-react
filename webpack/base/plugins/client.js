@@ -8,14 +8,13 @@ export default [
   new webpack.DefinePlugin({
     ...globals,
     'process.env': {
-      NODE_ENV: JSON.stringify(environment),
+      NODE_ENV: JSON.stringify(environment)
     },
     __DEVELOPMENT__: true,
     __DEVTOOLS__: true,
     __CLIENT__: true,
     __SERVER__: false
-  }),
-
+  })
   // TODO: learn & setup correctly, disabled for now
   //
   // new AppCachePlugin({
@@ -25,4 +24,4 @@ export default [
   //     /.+\.serviceworker\.js$/
   //   ]
   // })
-]
+];

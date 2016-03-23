@@ -1,6 +1,5 @@
 import paths from '../../../config/paths';
 import { cssOptions } from '../../utils';
-
 export default [
   {
     test: /\.css$/,
@@ -19,8 +18,8 @@ export default [
     ],
     loaders: [
       'style',
-      //`css?sourceMap&${cssOptions.css}`,
-      `css?${cssOptions.css}`,
+      `css?sourceMap&${cssOptions.css}`,
+      // `css?${cssOptions.css}`,
       'postcss'
     ]
   },
@@ -53,14 +52,14 @@ export default [
     ]
   },
   {
-          test    : /\.less$/,
-          loaders : [
-            'style-loader',
-            'css-loader',
-            'autoprefixer?browsers=last 2 version',
-            'less-loader?{"sourceMap":true,"modifyVars":{"primary-color": "#ff6f00", "link-color": "#ff6f00"}}' // 调整antd的主题颜色
-          ]
-        },
+    test: /\.less$/,
+    loaders: [
+      'style-loader',
+      'css-loader',
+      'autoprefixer?browsers=last 2 version',
+      'less-loader?{"sourceMap":true,"modifyVars":{"primary-color": "#ff6f00", "link-color": "#ff6f00"}}' // 调整antd的主题颜色
+    ]
+  },
   {
     test: /\.jsx?$/,
     loader: 'babel',
@@ -78,10 +77,10 @@ export default [
       plugins: [
         'transform-runtime',
         'typecheck',
-        'transform-decorators-legacy',
+        'transform-decorators-legacy', // 支持装饰器
         'add-module-exports',
         'react-require'
       ]
     }
   }
-]
+];

@@ -42,4 +42,4 @@ export default [
   { test: /\.ttf(\?.+)?$/, query: { mimetype: 'application/octet-stream', ...query.font.url }, ...loader.font.url },
   { test: /\.eot(\?.+)?$/, query: query.font, ...loader.font.file },
   { test: /\.svg(\?.+)?$/, include: [paths.modules, paths.scripts], loader: 'url-loader' }
-]
+];

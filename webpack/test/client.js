@@ -5,3 +5,4 @@ import common from './common';
 
 export default merge(base, common, {
 });
+

@@ -1,5 +1,7 @@
 /**
  *  aliases 别名 简化路径查找
+ *
+ *  webpack 中配置的
  */
 import fs from 'fs';
 

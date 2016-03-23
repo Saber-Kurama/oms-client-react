@@ -5,6 +5,7 @@ const express = require('express');
 const webpack = require('webpack');
 const MemoryFileSystem = require("memory-fs");
 const config = require('../webpack/development/client');
+const appconfig = require('../config');
 const app = express();
 const compiler = webpack(config);
 const router = express.Router();
@@ -55,10 +56,11 @@ app.use(require('webpack-hot-middleware')(compiler));
 // app.use('api', require('../src/mock'));
 
 
-app.listen(3000, 'localhost', (err) => {
+app.listen(appconfig.server.port, appconfig.server.host, (err) => {
   if (err) {
     console.log(err);
     return;
   }
 
+  console.log(`Listening at ${appconfig.server.url}`);
 });

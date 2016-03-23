@@ -7,4 +7,4 @@ export default {
   emitWarning: true,
   failOnError: false,
   failOnWarning: false
-}
+};

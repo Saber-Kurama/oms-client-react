@@ -15,8 +15,11 @@ const modules = {
 };
 
 export default [
-  new webpack.ProvidePlugin(modules),
-  new webpack.ContextReplacementPlugin(/node_modules\/moment\/locale/, /ru|en-gb/),
+  // 自动加载模块
+  // new webpack.ProvidePlugin(modules),
+  // 替换资源????
+  // new webpack.ContextReplacementPlugin(/node_modules\/moment\/locale/,
+  // /ru|en-gb/),
   new webpack.optimize.OccurenceOrderPlugin(true),
   new webpack.optimize.DedupePlugin()
-]
+];

@@ -1,6 +1,6 @@
 import { name, description } from '../package';
 
-// import server from './server';
+import server from './server';
 // 所有的路径
 import paths from './paths';
 // 路径转换
@@ -15,16 +15,16 @@ import postcss from './postcss';
 import env from './env';
 //
 import parseArgs from './utils/parseArgs';
-//
+
+// 指令的输入参数 结果
 const argv = parseArgs();
 const { environments, environmentName } = env(argv);
 
 export default {
   argv,
-
   name,
   description,
-  // server,
+  server,
   //
   paths,
   resolve,
@@ -34,8 +34,9 @@ export default {
   //
   postcss,
   // browsersync: browsersync(argv),
-  //
+
+  // 当前NODE_ENV的环境变量
   env: environments,
   environment: environmentName,
 
-}
+};
