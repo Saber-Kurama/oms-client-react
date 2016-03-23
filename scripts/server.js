@@ -11,6 +11,7 @@ const compiler = webpack(config);
 const router = express.Router();
 const fs = new MemoryFileSystem();
 const routes = require('./routes/index');
+console.log('??/');
 app.use(express.static(path.join(__dirname ,'../dist/public')));
 app.use('/api', routes);
 app.use(router.get('*',function(req, res, next){

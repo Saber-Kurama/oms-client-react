@@ -9,11 +9,10 @@ import plugins from './plugins/client';
 import loaders from './loaders/client';
 
 import preLoaders from './preLoaders';
-
 export default merge(base, common, {
   entry: ['webpack-hot-middleware/client'],
   output: {
-    publicPath: '${appConfig.server.url}/'
+    publicPath: `${appConfig.server.url}/`
   },
   module: { preLoaders, loaders },
   plugins,
