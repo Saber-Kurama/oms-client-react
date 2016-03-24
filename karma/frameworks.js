@@ -4,4 +4,4 @@ export default [
   'chai-sinon',
   'chai-as-promised',
   'chai'
-]
+];

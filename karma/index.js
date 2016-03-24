@@ -27,7 +27,7 @@ const karmaConfig = {
     [testsPath]: ['webpack', 'sourcemap']
   },
   // 需要生成哪些代码报告
-  reporters: ['dots'],
+  reporters: ['spec'],
   // 需要测试哪些浏览器
   browsers: [browser],
   // 配置浏览器自定义启动器

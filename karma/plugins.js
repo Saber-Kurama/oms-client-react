@@ -14,6 +14,6 @@ export default [
   // 'karma-firefox-launcher,
 
   'karma-mocha-reporter',
-  // 'karma-spec-reporter',
+  'karma-spec-reporter',
   // 'karma-nyan-reporter'
 ]
