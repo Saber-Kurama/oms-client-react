@@ -2,6 +2,8 @@ import paths from '../../../config/paths';
 import { addHash } from '../../utils';
 
 const name = addHash('[path][name].[ext]', 'hash:10');
+const fontname = addHash('fonts/[name].[ext]', 'hash:10');
+const imagename = addHash('images/[name].[ext]', 'hash:10');
 const limit = 10000;
 
 const loader = {
@@ -26,10 +28,10 @@ const loader = {
 
 const query = {
   font: {
-    file: { prefix: 'fonts/', name },
-    url: { prefix: 'fonts/', name, limit }
+    file: { prefix: 'fonts/', name: fontname },
+    url: { prefix: 'fonts/', name: fontname, limit }
   },
-  image: { url: { prefix: 'images/', name, limit } }
+  image: { url: { prefix: 'images/', name: imagename, limit } }
 };
 /*
  *  主要是静态资源的 加载器

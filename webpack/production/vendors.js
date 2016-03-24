@@ -3,7 +3,7 @@ export default [
   // 'normalize.css',
   // 'validator',
   // 'isomorphic-fetch',
-   'react',
+  'react',
   // 'react-addons-css-transition-group',
   'react-dom',
   // 'react-router-redux',
@@ -40,4 +40,4 @@ export default [
   // 'react-pure-render',
   // 'react-themeable',
   // 'react-visibility-sensor',
-]
+];

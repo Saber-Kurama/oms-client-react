@@ -5,8 +5,8 @@ const src = require.context('../src/scripts', true, /^((?!(client|server)).)*\.j
 src.keys().forEach(src);
 
 // 测试框架
-const frameworkTests = require.context('./framework', true, /.+\.test\.jsx?$/);
-frameworkTests.keys().forEach(frameworkTests);
+//const frameworkTests = require.context('./framework', true, /.+\.test\.jsx?$/);
+//frameworkTests.keys().forEach(frameworkTests);
 
 
 // 加载所用测试文件

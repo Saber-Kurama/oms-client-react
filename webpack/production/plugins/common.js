@@ -12,4 +12,4 @@ export default [
   inject: 'body'
   }),
   new ExtractTextPlugin(addHash('css/[name].css', 'contentHash')),
-]
+];

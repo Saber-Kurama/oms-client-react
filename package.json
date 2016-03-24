@@ -222,6 +222,7 @@
     "start": "gulp --watch",
     "dev": "gulp nodemon",
     "dev:lint": "gulp nodemon:lint",
+    "production": "gulp production --production",
     "test": "karma start -- --test",
     "test:mocha": "mocha ./test/app/modules/**/*.test.js",
     "test:mocha:watch": "npm run test:mocha -- --watch",

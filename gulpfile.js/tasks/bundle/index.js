@@ -1,9 +1,7 @@
 import webpack from 'webpack';
 import logStats from './logStats.js';
-
 const { debug } = logger('app:bundle');
 const { watch } = config.app.argv;
-
 // creates a cellback function
 // that webpack runs when it's done bundling
 // const bundleCallback = cb => {
@@ -17,7 +15,6 @@ const { watch } = config.app.argv;
 //     initial = false;
 //   };
 // };
-
 // runs webpack bundler for the given environment name,
 // tells webpack to watch for changes if we are in "watch" mode
 // const bundle = (name, cb) => {
@@ -31,21 +28,18 @@ const { watch } = config.app.argv;
 //     bundler.watch(200, done) :
 //     bundler.run(done);
 // };
-
 gulp.task('bundle:client', cb => {
-  console.log(config.webpack.client.module.loaders);
   const cfg = config.webpack.client;
-  //debug('client config: ', prettyjson(cfg));
+  debug('client config: ', prettyjson(cfg));
   return webpack(cfg).run((err, stats) => {
     logStats(err, stats);
-  //   if (err) {
-  //   console.error(err);
-  // }
-  // console.log(stats);
+    if (err) {
+      console.error(err);
+    }
+    // console.log(stats);
     return cb();
   });
 });
-
 gulp.task('bundle:server', cb => bundle('server', cb));
 gulp.task('bundle', (cb) => sequence([
   'bundle:server',
