@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Saber-Kurama/oms-client-react.svg?branch=master)](https://travis-ci.org/Saber-Kurama/oms-client-react)
+
 # oms-client-react
 
 该项目是打算采用react以及antd来做(重构)一个项目,目的是更深入了解react项目的架构和蚂蚁金福antd的UI
