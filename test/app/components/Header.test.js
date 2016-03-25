@@ -19,6 +19,6 @@ describe('test', function() {
   it('Hello Tmall', function() {
     let cp = ReactDOM.render(<Header/>, container);
     let welcome = TestUtils.findRenderedComponentWithType(cp, Header);
-    ReactDOM.findDOMNode(welcome).textContent.should.be.eql('Hello Tmall');
+    ReactDOM.findDOMNode(welcome).textContent.should.be.eql('易世达这是一个logo菜单一菜单二');
   });
 });

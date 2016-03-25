@@ -1,7 +1,8 @@
+# 配置语言及相应版本
 language: node_js
 node_js:
   - 5.1.0
-
+# build 环境
 env:
   - CXX=g++-4.8
 addons:
@@ -11,15 +12,21 @@ addons:
     packages:
       - g++-4.8
 
+# before_install   在npm install 之前通过这个安装依赖包
+
+# 执行测试语句之前执行
 before_script:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - npm install -g npm@latest
 
-after_success:
-  - npm run coverage
+# script 配置测试的 语句 默认是 npm run test
 
+# after_success:
+#  - npm run coverage
+
+# 消息通知
 notifications:
   email: false
-  slack: partyrooms:EUZT935nrnLydAZuXzvHhZPh
+#slack: partyrooms:EUZT935nrnLydAZuXzvHhZPh 自定义消息通知方式
