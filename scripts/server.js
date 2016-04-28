@@ -12,6 +12,7 @@ const router = express.Router();
 const fs = new MemoryFileSystem();
 const routes = require('./routes/index');
 console.log('??/');
+console.log(appconfig);
 app.use(express.static(path.join(__dirname ,'../dist/public')));
 app.use('/api', routes);
 app.use(router.get('*',function(req, res, next){
@@ -27,10 +28,10 @@ app.use(router.get('*',function(req, res, next){
     /\.eot(\?.+)?$/.test(req.url) ||
     /\.svg(\?.+)?$/.test(req.url) ||
     /\.json(\?.+)?$/.test(req.url) ||
-    req.url === '/__webpack_hmr' ||
-    req.url === '/'
+    req.url === '/__webpack_hmr'
+    //req.url === '/'
   ){
-    //console.log(req.url);
+    console.log(req.url);
 
   }else {
     console.log('--------------' + req.url)

@@ -10,7 +10,7 @@ const routes = (
   <Route>
     <Route path="/" component={layouts.app} >
       <IndexRoute component={Home} />
-      <Route path="/about" component={About} />
+      <Route path="about" component={About} />
     </Route>
   </Route>
 );

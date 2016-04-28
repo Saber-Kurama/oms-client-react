@@ -58,21 +58,6 @@ export default [
     include: [
       /node_modules\/qs/,
       paths.scripts
-    ],
-    query: {
-      presets: [
-        'es2015',
-        'stage-0',
-        'react',
-        'react-hmre'
-      ],
-      plugins: [
-        'transform-runtime',
-        'typecheck',
-        'transform-decorators-legacy',
-        'add-module-exports',
-        'react-require'
-      ]
-    }
+    ]
   }
 ];

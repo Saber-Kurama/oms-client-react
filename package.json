@@ -12,7 +12,7 @@
     "email": ""
   },
   "dependencies": {
-    "antd": "^0.12.1",
+    "antd": "^0.12.15",
     "babel": "^6.5.2",
     "babel-polyfill": "^6.5.0",
     "babel-runtime": "^6.5.0",
@@ -38,7 +38,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
-    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.5.2",
     "babel-eslint": "^6.0.0-beta.2",
     "babel-loader": "^6.2.2",
@@ -220,8 +219,8 @@
     "lint:js:test": "gulp lint:js --test",
     "security:check": "gulp security:check",
     "start": "gulp --watch",
-    "dev": "gulp nodemon",
-    "dev:lint": "gulp nodemon:lint",
+    "dev": "gulp dev",
+    "dev:lint": "gulp dev:lint",
     "production": "gulp production --production",
     "test": "karma start -- --test",
     "test:mocha": "mocha ./test/app/modules/**/*.test.js",

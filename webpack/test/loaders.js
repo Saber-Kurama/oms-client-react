@@ -20,7 +20,8 @@ export default [
           loaders : [
             'style-loader',
             'css-loader',
-            'autoprefixer?browsers=last 2 version',
+            'postcss',
+            //'autoprefixer?browsers=last 2 version',
             'less-loader?{"sourceMap":true,"modifyVars":{"primary-color": "#ff6f00", "link-color": "#ff6f00"}}' // 调整antd的主题颜色
           ]
         },

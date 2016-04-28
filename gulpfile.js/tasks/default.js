@@ -1,13 +1,20 @@
-//gulp.task('default', () => sequence(
-//    'clean:dist',
-//    'assets',
-//    'server'            // start server
-//));
-//gulp.task('dev', () => sequence(
-//    'assets'
-//));
+gulp.task('default', () => sequence(
+    'clean:dist',
+    'assets',
+    'server'            // start server
+));
+gulp.task('dev', () => sequence(
+    'clean:dist',
+    'assets',
+    'nodemon'
+));
+gulp.task('dev:lint', () => sequence(
+    'clean:dist',
+    'assets',
+    'nodemon:lint'
+));
 gulp.task('production', () => sequence(
     'clean:dist',
-    'lint',
+    //'lint:js',
     'bundle:client'
 ));
